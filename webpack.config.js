@@ -9,13 +9,13 @@ module.exports = {
         './webrtc/dist/webrtc-1.4.13': ['./webrtc/src/entry']
     },
     output: {
-        path: './',
-        publicPath: './',
+        path: path.resolve(__dirname, './'),
+        publicPath: path.resolve(__dirname, './'),
         filename: '[name].js'
     },
     // devtool: '#eval-cheap-module-source-map',
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['.js', '.jsx']
     },
     module: {
         loaders: [
